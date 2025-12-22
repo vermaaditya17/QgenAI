@@ -1,0 +1,31 @@
+@import "tailwindcss";
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  /* Deep animated background */
+  background: linear-gradient(-45deg, #0f172a, #1e1b4b, #000000, #111827);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #ececf1;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Custom Scrollbar to match the theme */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1e1e24; 
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #4b5563; 
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #6b7280; 
+}
